@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherStatusComponent implements OnInit {
 
+  message: string = 'Weather weather weather~';
+  
   constructor() { }
 
   ngOnInit() {
