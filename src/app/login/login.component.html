@@ -1,3 +1,27 @@
-<p>
-  login works!
-</p>
+<div class="container">
+  <div class="form-login">
+    <h1>Login</h1>
+    <label>Username
+      <input [(ngModel)]="username" (keyup.enter)="login()" type="text" class="form-control input-sm char-input" placeholder="Username"
+      />
+      <br/>
+    </label>
+    <label>Password
+      <input [(ngModel)]="password" (keyup.enter)="login()" type="password" class="form-control input-sm char-input" placeholder="Password"
+      />
+    </label>
+    <br/>
+    <div class="wrapper">
+      <span class="group-btn">
+        <div (click)="login()" class="btn btn-primary">
+          Login
+        </div>
+      </span>
+    </div>
+  </div>
+
+  <div *ngIf="message">
+    <br/>
+    <h5 class="alert alert-danger" role="alert">{{message}}</h5>
+  </div>
+</div>
