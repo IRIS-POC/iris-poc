@@ -1,3 +1,67 @@
-<p>
-  create-iop works!
-</p>
+<h3>Create IOP Request</h3>
+
+<form>
+
+	<div>
+		<label>Start Date<span style="color:#E65400">*</span></label><br>
+		<input type="date" name="startDate" [(ngModel)]="startDate" style="width:140px">
+	</div>
+
+	<div>
+		<label>Task Time<span style="color:#E65400">*</span></label><br>
+		<input type="number" style="margin-bottom:0em" name="taskTime" [(ngModel)]="taskTime" style="width:70px; margin-bottom:0em">
+		<p style="size:0.2em" name="taskTime">Number of Days to Complete</p>
+	</div>
+	
+  <div>
+		<label>Priority<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="priority" [(ngModel)]="priority" style="width:140px">
+	</div>
+	
+  <div>
+		<label>Shutdown Type<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="shutdownType" [(ngModel)]="shutdownType" style="width:140px">
+  </div>
+	
+  <div>
+		<label>Facility<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="facility" [(ngModel)]="facility" style="width:210px">
+	</div>
+	
+  <div>
+		<label>Functional Group<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="functionalGroup" [(ngModel)]="functionalGroup" style="width:210px">
+	</div>
+	
+  <div>
+		<label>Work Order<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="workOrder" [(ngModel)]="workOrder" style="width:210px">
+	</div>
+	
+  <div>
+		<label>Description of Work<span style="color:#E65400">*</span></label><br>
+		<textarea name="descriptionOfWork" [(ngModel)]="descriptionOfWork" style="width:98%"></textarea>
+	</div>
+	
+  <div>
+		<label>Cost Center<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="costCenter" [(ngModel)]="costCenter" style="width:210">
+	</div>
+	
+  <div>
+		<label>Resources<span style="color:#E65400">*</span></label><br>
+		<input type="text" name="resources" [(ngModel)]="resources" style="width:210">
+	</div>
+	
+  <div>
+		<label>Comments<span style="color:#E65400">*</span></label><br>
+		<textarea type="text" name="comments" [(ngModel)]="comments" style="width:98%;"></textarea>
+	</div>
+
+</form>
+
+<!-- buttons -->
+<div class="pull-right">
+	<button class="btn" style="background:#495057">Cancel</button>
+	<button class="btn" style="background:#E65400" (click)="logData()">Submit</button>
+</div>
