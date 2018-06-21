@@ -7,6 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateIopComponent implements OnInit {
 
+  startDate;
+  taskTime;
+  priority;
+  shutdownType;
+  facility;
+  functionalGroup;
+  workOrder;
+  descriptionOfWork;
+  costCenter;
+  resources;
+  comments;
+
+  logData() {
+    console.log("data is:");
+    console.log("Desc: " + this.descriptionOfWork);
+  }
+  
   constructor() { }
 
   ngOnInit() {
