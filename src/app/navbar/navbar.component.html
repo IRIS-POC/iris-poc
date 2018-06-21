@@ -1,18 +1,27 @@
-<div class="container-fluid">
-	<div class="row" style="background: #E65400; padding: 0.2em 0em 0.2em 0em">
-		<div class="col-md-1">
-			<div class="pull-right" style="border: solid 1px white">temp2
-			</div>
-			<div class="col-md-1 col-md-offset-2" style="margin-right:2em">
-				<div class="pull-right" style="border: solid 1px white">bell
-				</div>
-			</div>
-			<div class="col-md-1" id="nav-drop-down">
-				<div class="pull-left" style="border: solid 1px white">temp1
-				</div>
-			</div>
-			<div class="col-md-2">
-				<label>BHP <span>IRIS</span></label>
-			</div>
-		</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+
+	<button class="navbar-toggle collapsed pull-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+	 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand pull-left bg-orange" routerLink="/home">
+		{{title}}
+		<span class="badge-primary">{{title2}}</span>
+	</a>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" routerLink=""></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" routerLink=""></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/logout">Logout</a>
+			</li>
+		</ul>
 	</div>
+</nav>

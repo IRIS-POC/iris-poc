@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatGridListModule } from '@angular/material/grid-list';
 import '@angular/material/prebuilt-themes/indigo-pink.css';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +19,8 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './service/login.service';
 import { CardSpawnerComponent } from './card-spawner/card-spawner.component';
+import { CreateIopComponent } from './create-iop/create-iop.component';
+import { RequestDetailComponent } from './request-detail/request-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { CardSpawnerComponent } from './card-spawner/card-spawner.component';
     PlannerDashboardComponent,
     IopListComponent,
     RequestApprovalsComponent,
-    CardSpawnerComponent
+    CardSpawnerComponent,
+    CreateIopComponent,
+    RequestDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { CardSpawnerComponent } from './card-spawner/card-spawner.component';
     FormsModule,
     HttpModule,
     HttpClientModule,
-    MatGridListModule
+    MatGridListModule,
+    NgbModule.forRoot()
   ],
   exports: [
     MatGridListModule
@@ -46,6 +52,8 @@ import { CardSpawnerComponent } from './card-spawner/card-spawner.component';
   providers: [
     LoginService
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
