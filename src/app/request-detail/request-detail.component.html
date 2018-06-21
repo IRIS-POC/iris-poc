@@ -1,3 +1,103 @@
-<p>
-  request-detail works!
-</p>
+<h2 style="margin: 0.5em 0em 0.1em 0.4em">
+	Request Details</h2>
+
+
+<h3 style="margin: 0.5em 0em 0.1em 0.5em">Request</h3>
+<hr style="display:block; border-width:1px; color:black; border-style:inset; margin: 0 0.2em 0.5em 0.2em">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<label>Activity Description</label>
+			<p>{{ activityDescription }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<label>Requested Start</label>
+			<p>{{ requestedStart }}</p>
+		</div>
+		<div class="col-sm-4">
+			<label>Duration</label>
+			<p>{{ duration }}</p>
+		</div>
+		<div class="col-sm-4">
+			<label>Vendor</label>
+			<p>{{ vendor }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<label>Priority</label>
+			<p>{{ priority }}</p>
+		</div>
+		<div class="col-sm-4">
+      <label>Functional Group</label>
+      <p>{{ functionalGroup }}</p>
+		</div>
+	</div>
+</div>
+
+
+<h3 style="margin: 0.5em 0em 0.1em 0.5em">Work</h3>
+<hr style="display:block; border-width:1px; color:black; border-style:inset; margin: 0 0.2em 0.5em 0.2em">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3">
+			<label>Work Order</label>
+			<p>{{ workOrder }}</p>
+		</div>
+		<div class="col-sm-3">
+			<label>Notification Number</label>
+			<p>{{ notificationNumber }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<label>Base Start Date</label>
+			<p>{{ baseStartdate }}</p>
+		</div>
+		<div class="col-sm-2">
+			<label>Base End Date</label>
+			<p>{{ baseEndDate }}</p>
+		</div>
+		<div class="col-sm-3">
+			<label>Functional Location</label>
+			<p>{{ functionalLocation }}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<label>Planned Cost</label>
+      <p>{{ plannedCost }}</p>
+		</div>
+	</div>
+</div>
+
+
+<h3 style="margin: 0.5em 0em 0.1em 0.5em">Elegibility</h3>
+<hr style="display:block; border-width:1px; color:black; border-style:inset; margin: 0 0.2em 0.5em 0.2em">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+      <img height="3em" width="auto" alt="temp" style="border: solid 1px black">
+    </div>
+    <div class="col-sm-2">
+      <p class="elegibility-details">{{ name }}</p>
+      <p class="elegibility-details">{{ title }}</p>
+      <p class="elegibility-details">{{ company }}</p>
+      <p class="elegibility-details">{{ phoneNumber }}</p>
+      <p class="elegibility-details">{{ email }}</p>
+    </div>
+    <div class="col-sm-8">
+        <label>Certifications</label>
+        <div class="row">
+          <div class="col-sm-2 cert">cert1</div>
+          <div class="col-sm-2 cert">cert2</div>
+          <div class="col-sm-2 cert">cert3</div>
+        </div>
+    </div>
+  </div>
+</div>
