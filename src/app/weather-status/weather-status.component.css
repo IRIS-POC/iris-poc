@@ -26,6 +26,7 @@
 .ticker-wrap {
   background: grey;
   width: 100%;
+  margin-top: 50px;
   overflow: hidden;
   height: 2rem;
   padding-left: 100%;

@@ -60,8 +60,6 @@ export class RequestDetailComponent implements OnInit {
   this.materials = ['temp', 'temp', 'temp'];
   }
   
-  constructor() { }
-
   ngOnInit() {
   }
 

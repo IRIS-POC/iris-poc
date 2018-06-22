@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatGridListModule } from '@angular/material/grid-list';
 import '@angular/material/prebuilt-themes/indigo-pink.css';
@@ -21,6 +22,7 @@ import { LoginService } from './service/login.service';
 import { CardSpawnerComponent } from './card-spawner/card-spawner.component';
 import { CreateIopComponent } from './create-iop/create-iop.component';
 import { RequestDetailComponent } from './request-detail/request-detail.component';
+import { SearchFilterComponent } from './search-filter/search-filter.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { RequestDetailComponent } from './request-detail/request-detail.componen
     RequestApprovalsComponent,
     CardSpawnerComponent,
     CreateIopComponent,
-    RequestDetailComponent
+    RequestDetailComponent,
+    SearchFilterComponent
   ],
   imports: [
     BrowserModule,
