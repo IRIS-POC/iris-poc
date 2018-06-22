@@ -1,3 +1,14 @@
-<p>
-  iop-list works!
-</p>
+<div style="background-color: #495057">
+  <ul>
+    <li *ngFor="let data of mockData">
+      <div class="card" style="margin: 0.4em 0.6em 0.4em 0.6em">
+        <div class="card-header" style="padding:0.4em">
+          <span style="color:#E65400">IOP-{{ data.iopNumber }}</span>   <span style="margin-left:5em">{{ data.date }}</span>
+        </div>
+        <div class="card-body" style="padding:0.6em">
+          Phase {{ data.phase }}  {{ data.description }}  {{ data.flag }}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
